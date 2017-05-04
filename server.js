@@ -28,12 +28,14 @@ app.post("/dreams", function (request, response) {
 
 // Simple in-memory store for now
 var dreams = [
-  "Find and count some sheep",
-  "Climb a really tall mountain",
-  "Wash the dishes"
+  "Find and count some tall sheep",
+  "Climb a really small mountain",
+  "Wash them dishes",
+  "Close the cover before striking",
+  "Open file before writing"
   ];
 
 // listen for requests :)
-listener = app.listen(process.env.PORT, function () {
+var listener = app.listen(process.env.PORT, function () {
   console.log('Your app is listening on port ' + listener.address().port);
 });
